@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/null.css">
+        <title>Registration</title>
+    </head>
+
+    <body class="NS-400">
+        <header class="site-header ">
+            <a href="./index.html" class="back-btn"><svg width="15.000000"
+                    height="12.000000" viewBox="0 0 15 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs />
+                    <path id="Vector"
+                        d="M6.75 11.62C6.9 11.47 6.98 11.28 6.99 11.05C6.99 10.82 6.92 10.62 6.77 10.47L2.76 6.47L13.54 6.47C13.77 6.47 13.97 6.39 14.12 6.23C14.28 6.07 14.36 5.88 14.36 5.65C14.36 5.42 14.28 5.22 14.12 5.06C13.97 4.91 13.77 4.83 13.54 4.83L2.76 4.83L6.77 0.82C6.92 0.67 6.99 0.48 6.99 0.25C6.98 0.02 6.9 -0.18 6.75 -0.33C6.6 -0.48 6.41 -0.55 6.18 -0.55C5.95 -0.55 5.75 -0.48 5.6 -0.33L0.2 5.07C0.12 5.14 0.06 5.23 0.03 5.33C0 5.43 -0.02 5.54 -0.02 5.65C-0.02 5.76 0 5.86 0.03 5.95C0.06 6.05 0.12 6.14 0.2 6.22L5.6 11.62C5.75 11.77 5.95 11.85 6.18 11.85C6.41 11.85 6.6 11.77 6.75 11.62Z"
+                        fill="#474A54" fill-opacity="1.000000"
+                        fill-rule="nonzero" />
+                </svg></a>
+            <div class="company-logo"><img src="./imgs/LOGO.png"
+                    alt="company logo"></div>
+        </header>
+        <main class="main">
+            <section class="registration">
+                <div class="registration-title">
+                    <h2 class="NS-800">Create profile</h2>
+                </div>
+                <form action class="registration-form">
+
+                    <div class="form-row__item">
+                        <div class="input-container">
+                            <label class="form-label NS-800"
+                                for="full-name">Full name</label>
+                            <input
+                                class="form-input check-input NS-400 user-info"
+                                type="text" id="full-name" name="full name"
+                                placeholder="Full name" />
+                        </div>
+                        <span class="input-error name-error NS-800"></span>
+                    </div>
+                    <div class="form-row__item">
+                        <div class="input-container">
+                            <label class="form-label NS-800"
+                                for="user-name">Your name</label>
+                            <input
+                                class="form-input check-input NS-400 user-info"
+                                type="text" id="user-name" name="user name"
+                                placeholder="Name" />
+                        </div>
+                        <span class="input-error name2-error NS-800"></span>
+                    </div>
+                    <div class="form-row__item">
+                        <div class="input-container">
+                            <label class="form-label NS-800"
+                                for="user-country">Your country</label>
+                            <input
+                                class="form-input check-input NS-400 user-info"
+                                type="text" id="user-country"
+                                name="user country" placeholder="Country" />
+                        </div>
+                        <span class="input-error country-error NS-800"></span>
+                    </div>
+                    <div class="form_toggle">
+                        <span class="form-span NS-800">Your gender</span>
+                        <div class="form-toggle__container">
+                            <div class="form_toggle-item item-1">
+                                <input id="male" type="radio" name="radio"
+                                    value="off" checked>
+                                <label for="male" class="NS-400">Male</label>
+                            </div>
+                            <div class="form_toggle-item item-2">
+                                <input id="female" type="radio" name="radio"
+                                    value="on">
+                                <label for="female"
+                                    class="NS-400">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-choices">
+                        <span class="form-span NS-800">Your hobbies</span>
+                        <div class="form-choices__container">
+                            <div class="form_choice">
+                                <input id="music" type="checkbox" name="radio"
+                                    value="music">
+                                <label for="music">Music</label>
+                            </div>
+                            <div class="form_choice">
+                                <input id="sports" type="checkbox" name="radio"
+                                    value="sports">
+                                <label for="sports">Sports</label>
+                            </div>
+                            <div class="form_choice">
+                                <input id="travel" type="checkbox" name="radio"
+                                    value="travel">
+                                <label for="travel">Travel</label>
+                            </div>
+                            <div class="form_choice">
+                                <input id="movies" type="checkbox" name="radio"
+                                    value="movies">
+                                <label for="movies">Movies</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="distance-slider">
+                        <span class="distance-slider__span NS-800">Search
+                            distance</span>
+                        <div class="distance-slider__container">
+                            <div id="tooltip" class="tooltip">0m</div>
+                            <input type="range" id="distanceRange" min="0"
+                                max="1000" value="0" step="10">
+                        </div>
+                    </div>
+                    <button type="button"
+                        class="registration-form__btn rose-btn">Create
+                        profile</button>
+                </form>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="site-footer__links">
+                <a href="#" class="NS-400">Privacy Policy</a>
+                <a href="#" class="NS-400">Terms & Conditions</a>
+                <a href="#" class="NS-400">Contact Us</a></div>
+        </footer>
+        <script src="./js/distance-slider.js"></script>
+        <script src="./js/form-check.js"></script>
+    </body>
+
+</html>
