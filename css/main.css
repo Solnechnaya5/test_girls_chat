@@ -519,6 +519,7 @@ input[type="range"]::-moz-range-thumb {
     border-radius: 20px;
     background: rgb(242, 255, 220);
     z-index: 1000;
+    width: 550px;
 }
 
 .popup .popup-content {
@@ -546,7 +547,38 @@ input[type="range"]::-moz-range-thumb {
     top: 14px;
     right: 17px;
 }
+.popup-content {
+    margin-top: 50px;
+}
+.popup-content h3{
+    margin-bottom: 30px;
+}
 
+.popup-btns {
+    display: flex;
+}
+.popup-btns .delete-btn {
+    width: 230px;
+height: 53px;
+border-radius: 100px;
+background: rgb(229, 33, 143);
+color: rgb(242, 255, 220);
+font-size: 18px;
+line-height: 23.5px;
+text-align: center;
+}
+.popup-btns .cancel-btn {
+    width: 230px;
+height: 53px;
+border-radius: 100px;
+background: transparent;
+border: 2px solid rgb(229, 33, 143);
+color: rgb(229, 33, 143);
+font-size: 18px;
+line-height: 23.5px;
+
+text-align: center;
+}
 .user-profile {
     display: flex;
     flex-direction: column;
@@ -723,5 +755,15 @@ fill: white;
     .user-photo__profile {
         width: 345px;
         height: 503px;
+    }
+    .popup{
+        width: 304px;
+    }
+    .popup-btns{
+        flex-direction: column;
+        align-items: center;
+    }
+    .popup-btns .delete-btn{
+        margin-bottom: 10px;
     }
 }

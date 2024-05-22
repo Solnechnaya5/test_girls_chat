@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Додавання обробників подій для кнопок "Chat" на сторінці користувача
     document.querySelector('.chat-btn__profile').addEventListener('click', () => {
-        window.location.href = `/chat.html?id=${userId}`;
+        window.location.href = `./chat.html?id=${userId}`;
     });
 });
 
@@ -83,6 +83,6 @@ async function loadUsers() {
 document.querySelectorAll('.chat-btn').forEach(button => {
     button.addEventListener('click', function() {
         const userId = this.closest('.user').dataset.id;
-        window.location.href = `/chat.html?id=${userId}`;
+        window.location.href = `./chat.html?id=${userId}`;
     });
 });
