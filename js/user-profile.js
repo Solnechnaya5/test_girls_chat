@@ -33,16 +33,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             </svg>
           </button>
           <button class="block-btn NS-800">
-            <svg width="11.000000" height="11.000000"
-                viewBox="0 0 11 11" fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <defs />
-                <path id="block"
-                    d="M8 5.5L10.86 2.64C11.03 2.46 11.03 2.18 10.86 2.01L8.98 0.13C8.81 -0.05 8.53 -0.05 8.35 0.13L5.5 2.99L2.62 0.13C2.45 -0.05 2.17 -0.05 1.99 0.13L0.12 2.01C-0.05 2.18 -0.05 2.46 0.12 2.64L2.99 5.5L0.12 8.36C-0.05 8.53 -0.05 8.81 0.12 8.99L2 10.87C2.17 11.04 2.45 11.04 2.63 10.87L5.5 8.01L8.36 10.87C8.53 11.04 8.81 11.04 8.99 10.87L10.87 8.99C11.04 8.81 11.04 8.54 10.87 8.36L8 5.5Z"
-                    fill-rule="nonzero" />
-            </svg>
-            Block
+          Block the user
           </button>
         </div>
       `;

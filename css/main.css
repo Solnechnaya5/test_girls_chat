@@ -26,7 +26,7 @@ body {}
 
 .main {
     /* min-width: 375px; */
-    height: 100%;
+    height: auto;
     background: rgb(242, 255, 220);
 
 }
@@ -595,7 +595,10 @@ input[type="range"]::-moz-range-thumb {
     height: 34px;
     fill: white;
 }
-
+.user__choice__btns-profile .block-btn{
+    width: 304px;
+height: 53px;
+}
 .user-chat {
     width: 100%;
 }
